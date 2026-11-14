@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Wrong Man · Support &amp; Privacy</title>
+<meta name="description" content="Support and privacy policy for The Wrong Man, a detective game by Emexis Games.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single case-file column; a typewriter label strip marks each section like a file tab. */
+:root {
+  --bg: #f3f1ee;
+  --paper: #fbfaf8;
+  --fg: #1d1a19;
+  --muted: #5f5753;
+  --rule: #d8d2cc;
+  --accent: #a3201a;
+  --tab: #ebe6e1;
+  --display: "Special Elite", "Courier New", Courier, monospace;
+  --body: "IBM Plex Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141212; --paper: #1c1918; --fg: #ece6e2; --muted: #a59a94; --rule: #3a3331; --accent: #e0544a; --tab: #26211f;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141212; --paper: #1c1918; --fg: #ece6e2; --muted: #a59a94; --rule: #3a3331; --accent: #e0544a; --tab: #26211f;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 760px; margin: 0 auto; padding-block: 40px 64px; display: flex; flex-direction: column; gap: 28px; }
+header { display: flex; flex-direction: column; gap: 10px; }
+.stamp { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(34px, 7vw, 52px); line-height: 1.05; margin: 0; text-wrap: balance; }
+.lead { color: var(--muted); margin: 0; max-width: 62ch; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; }
+nav a { font-family: var(--mono); font-size: 13px; color: var(--fg); text-decoration: none; padding: 6px 12px; border: 1px solid var(--rule); border-radius: 3px; background: var(--paper); }
+nav a:hover, nav a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+.contact { background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--accent); padding: 18px 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+.contact .lbl { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); width: 100%; }
+.mail { font-family: var(--mono); font-size: 17px; user-select: all; word-break: break-all; min-width: 0; }
+button { font-family: var(--mono); font-size: 13px; padding: 7px 14px; border-radius: 3px; border: 1px solid var(--fg); background: transparent; color: var(--fg); cursor: pointer; }
+button:hover, button:focus-visible { background: var(--fg); color: var(--bg); outline: none; }
+.note { font-size: 13px; color: var(--muted); }
+section.file { background: var(--paper); border: 1px solid var(--rule); }
+.tab { background: var(--tab); border-bottom: 1px solid var(--rule); padding: 10px 20px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.tab h2 { font-family: var(--display); font-weight: 400; font-size: 22px; margin: 0; }
+.tab span { font-family: var(--mono); font-size: 12px; color: var(--muted); align-self: center; }
+.body { padding: 6px 20px 20px; }
+h3 { font-size: 16px; font-weight: 600; margin: 20px 0 4px; }
+p { margin: 0 0 8px; max-width: 66ch; }
+ul { margin: 4px 0 8px; padding-left: 20px; max-width: 64ch; }
+li { margin: 2px 0; }
+dl { margin: 0; }
+dt { font-weight: 600; margin-top: 16px; }
+dd { margin: 4px 0 0; color: var(--fg); max-width: 64ch; }
+footer { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { nav a, button { transition: background .15s, color .15s, border-color .15s; } }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="stamp">Emexis Games · Case file support</div>
+    <h1>The Wrong Man</h1>
+    <p class="lead">Support and privacy for the detective game on iPhone, iPad and Android. Türkçe metin aşağıda.</p>
+    <nav aria-label="Sections">
+      <a href="#support">Support</a>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#destek">Destek</a>
+      <a href="#gizlilik">Gizlilik Politikası</a>
+    </nav>
+  </header>
+
+  <div class="contact">
+    <div class="lbl">Contact · İletişim</div>
+    <span class="mail" id="mail">emirhaneksi3453@gmail.com</span>
+    <button type="button" id="copy">Copy address</button>
+    <span class="note" id="copied" aria-live="polite"></span>
+    <p class="note" style="width:100%;margin:0">Write in English or Turkish. Include your device model and what you were doing when the problem happened. · İngilizce ya da Türkçe yazabilirsin; cihaz modelini ve sorun çıktığında ne yaptığını ekle.</p>
+  </div>
+
+  <section class="file" id="support">
+    <div class="tab"><h2>Support</h2><span>EN</span></div>
+    <div class="body">
+      <dl>
+        <dt>Where is my progress saved?</dt>
+        <dd>On your device only. The game saves after every step. If you delete the game, your saves are deleted with it.</dd>
+        <dt>The board ties strings by itself. Can I turn that off?</dt>
+        <dd>Yes. Settings › Board strings › Manual. In Automatic mode the game only adds plain links (who said it, what it was about). Choosing Place, Motive, Means or Contradiction is always up to you: tap the middle of a string.</dd>
+        <dt>A case is too hard.</dt>
+        <dd>Settings › Difficulty › Relaxed gives you extra interviews, requests and hunches each day. It applies from the next case.</dd>
+        <dt>How do I change the language?</dt>
+        <dd>Settings › Language. The game is in English and Turkish.</dd>
+        <dt>Text is too small on my phone.</dt>
+        <dd>Settings › Text size › Large.</dd>
+        <dt>Can I replay a case?</dt>
+        <dd>Yes. Solved cases can be replayed from the main menu without touching your main save.</dd>
+        <dt>How do I turn off vibration?</dt>
+        <dd>Settings › Vibration › Off.</dd>
+        <dt>Does the game need the internet?</dt>
+        <dd>No. It plays fully offline, with no account and no ads.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="file" id="privacy">
+    <div class="tab"><h2>Privacy Policy</h2><span>Last updated 14 November 2026</span></div>
+    <div class="body">
+      <p>The Wrong Man is a single-player offline game by Emexis Games. We do not collect, store or share any personal data.</p>
+      <h3>What the game stores</h3>
+      <p>Your saved game, achievements and settings (language, volume, text size and speed, board options) are stored only on your device. They are never sent to us or anyone else. Uninstalling the game deletes them.</p>
+      <h3>What the game does not do</h3>
+      <ul>
+        <li>No account or sign-in.</li>
+        <li>No internet connection. No ads, analytics, tracking, or third-party SDKs that collect data.</li>
+        <li>No access to your contacts, photos, location, microphone or camera.</li>
+      </ul>
+      <h3>Children</h3>
+      <p>The game does not collect data from anyone, including children.</p>
+      <h3>Changes</h3>
+      <p>If a future version changes any of this, for example by adding purchases, this page will be updated before that version is released.</p>
+      <h3>Contact</h3>
+      <p>Questions about this policy: the address at the top of this page.</p>
+    </div>
+  </section>
+
+  <section class="file" id="destek">
+    <div class="tab"><h2>Destek</h2><span>TR</span></div>
+    <div class="body">
+      <dl>
+        <dt>İlerlemem nereye kaydediliyor?</dt>
+        <dd>Yalnızca cihazına. Oyun her adımda kendini kaydeder. Oyunu silersen kayıtlar da silinir.</dd>
+        <dt>Pano ipleri kendiliğinden bağlıyor. Kapatabilir miyim?</dt>
+        <dd>Evet. Ayarlar › Pano ipleri › Elle. Otomatik ayarda oyun yalnızca düz bağlantı kurar (kim söyledi, neyle ilgili). Konum, Güdü, Araç ya da Çelişki seçimi her zaman senindir: ipin ortasına dokun.</dd>
+        <dt>Vaka çok zor.</dt>
+        <dd>Ayarlar › Zorluk › Rahat her gün fazladan sorgu, talep ve sezgi verir. Bir sonraki vakadan itibaren geçerli olur.</dd>
+        <dt>Dili nasıl değiştiririm?</dt>
+        <dd>Ayarlar › Dil. Oyun Türkçe ve İngilizce.</dd>
+        <dt>Telefonda yazılar küçük.</dt>
+        <dd>Ayarlar › Yazı boyutu › Büyük.</dd>
+        <dt>Bir vakayı tekrar oynayabilir miyim?</dt>
+        <dd>Evet. Çözdüğün vakalar ana menüden, asıl kaydına dokunmadan yeniden oynanabilir.</dd>
+        <dt>Titreşimi nasıl kapatırım?</dt>
+        <dd>Ayarlar › Titreşim › Kapalı.</dd>
+        <dt>Oyun internet istiyor mu?</dt>
+        <dd>Hayır. Tamamen internetsiz oynanır; hesap ve reklam yoktur.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="file" id="gizlilik">
+    <div class="tab"><h2>Gizlilik Politikası</h2><span>Son güncelleme 14 Kasım 2026</span></div>
+    <div class="body">
+      <p>The Wrong Man, Emexis Games'in tek oyunculu, internetsiz bir oyunudur. Hiçbir kişisel veri toplamıyor, saklamıyor ve kimseyle paylaşmıyoruz.</p>
+      <h3>Oyunun sakladıkları</h3>
+      <p>Kayıtlı oyunun, başarımların ve ayarların (dil, ses, yazı boyutu ve hızı, pano seçenekleri) yalnızca cihazında durur. Bize ya da başka birine gönderilmez. Oyunu silince bunlar da silinir.</p>
+      <h3>Oyunun yapmadıkları</h3>
+      <ul>
+        <li>Hesap ya da giriş yok.</li>
+        <li>İnternet bağlantısı kullanılmaz. Reklam, analiz, takip ya da veri toplayan üçüncü taraf yazılım yoktur.</li>
+        <li>Rehberine, fotoğraflarına, konumuna, mikrofonuna ya da kamerana erişmez.</li>
+      </ul>
+      <h3>Çocuklar</h3>
+      <p>Oyun, çocuklar dahil hiç kimseden veri toplamaz.</p>
+      <h3>Değişiklikler</h3>
+      <p>İleride bir sürüm bunlardan birini değiştirirse, örneğin satın alma eklenirse, bu sayfa o sürüm yayımlanmadan önce güncellenir.</p>
+      <h3>İletişim</h3>
+      <p>Bu politikayla ilgili sorular için sayfanın başındaki adrese yazabilirsin.</p>
+    </div>
+  </section>
+
+  <footer>© 2026 Emexis Games · The Wrong Man</footer>
+</div>
+
+<script>
+(function () {
+  var btn = document.getElementById('copy'), out = document.getElementById('copied'), mail = document.getElementById('mail');
+  btn.addEventListener('click', function () {
+    var text = mail.textContent.trim();
+    function selectIt() {
+      var r = document.createRange(); r.selectNodeContents(mail);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      out.textContent = 'Selected · Seçildi';
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () { out.textContent = 'Copied · Kopyalandı'; }, selectIt);
+    } catch (e) { selectIt(); }
+  });
+})();
+</script>
+</body>
+</html>
